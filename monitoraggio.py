@@ -8,7 +8,7 @@ aeromobili = [
 ]
 
 def stampa_riepilogo(lista):
-    print("=== RIEPILOGO FLOTTA ===")
+    print("=== RIEPILOGO GENERALE FLOTTA PASCAL AVIONICS ===")
     if not lista:
         print("Nessun aeromobile presente in flotta.")
         return
