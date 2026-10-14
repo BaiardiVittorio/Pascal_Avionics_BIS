@@ -6,3 +6,9 @@ aeromobili = [
     {"codice": "I-GHI", "modello": "ATR72", "ore_volo": 1500, "controlli_ok": False},
     {"codice": "I-JKL", "modello": "A350", "ore_volo": 450, "controlli_ok": True}
 ]
+
+def stampa_riepilogo(lista):
+    print("=== RIEPILOGO FLOTTA ===")
+    for aero in lista:
+        stato = "OK" if aero["controlli_ok"] else "INSPECTION NEEDED"
+        print(f"[{aero['codice']}] Modello: {aero['modello']} | Ore: {aero['ore_volo']} | Controlli: {stato}")
